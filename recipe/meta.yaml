@@ -1,5 +1,5 @@
 {% set name = "kramdown" %}
-{% set version = "1.17.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 5862410a2c1692fde2fcc86d78d2265777c22bd101f11c76442f1698ab242cd8
+  sha256: 089956b32ef77cf85136553b392635d9e2b8b6c7bd8e470db6a9a1be172088b6
 
 build:
   noarch: generic
@@ -28,7 +28,7 @@ test:
     - ruby -r {{ name }} -e 'exit 0'
 
 about:
-  home: https://rubygems.orgs/gems/{{ name }}
+  home: https://rubygems.org/gems/{{ name }}
   license: MIT
   license_family: MIT
   license_file: {{ name }}-{{ version }}/COPYING

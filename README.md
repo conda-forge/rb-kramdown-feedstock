@@ -1,7 +1,7 @@
 About rb-kramdown
 =================
 
-Home: https://rubygems.orgs/gems/kramdown
+Home: https://rubygems.org/gems/kramdown
 
 Package license: MIT
 
