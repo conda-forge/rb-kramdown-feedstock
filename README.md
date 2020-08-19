@@ -5,7 +5,7 @@ Home: https://rubygems.org/gems/kramdown
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: kramdown is yet-another-markdown-parser
 
