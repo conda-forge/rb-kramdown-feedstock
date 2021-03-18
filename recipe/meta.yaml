@@ -1,5 +1,5 @@
 {% set name = "kramdown" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.1" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 07e2b0ca843d459c1ad5b65f5a1b24ff71ecd703f65a40b914de1ac14439bcee
+  sha256: 59e938cfa42a3d6169b295727fe09c4c91d742336c8fbd1042529f4db664ab49
 
 build:
   noarch: generic
