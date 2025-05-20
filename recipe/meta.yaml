@@ -1,5 +1,5 @@
 {% set name = "kramdown" %}
-{% set version = "2.3.1" %}
+{% set version = "2.5.1" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -15,28 +15,29 @@ build:
   script:
     - gem install -N -l -V --norc --ignore-dependencies {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
-  skip: {{ win }}
 
 requirements:
   host:
-    - ruby >2.5
+    - ruby
   run:
-    - ruby >2.5
+    - {{ pin_compatible('ruby', max_pin='x.x') }}
+    - rb-rexml >=3.3.9
 
 test:
   commands:
     - ruby -r {{ name }} -e 'exit 0'
 
 about:
-  home: https://rubygems.org/gems/{{ name }}
+  home: https://rubygems.org/gems/kramdown
   license: MIT
   license_family: MIT
-  license_file: {{ name }}-{{ version }}/COPYING
+  license_file: COPYING
   summary: kramdown is yet-another-markdown-parser
 
   doc_url: http://kramdown.gettalong.org/rdoc
-  dev_url: http://github.com/gettalong/{{ name }}
+  dev_url: http://github.com/gettalong/kramdown
 
 extra:
   recipe-maintainers:
     - sodre
+    - jdmarques
