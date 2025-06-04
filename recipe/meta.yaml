@@ -1,5 +1,5 @@
 {% set name = "kramdown" %}
-{% set version = "2.5.1" %}
+{% set version = "2.4.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 87bbb6abd9d3cebe4fc1f33e367c392b4500e6f8fa19dd61c0972cf4afe7368c
+  sha256: b62e5bcbd6ea20c7a6730ebbb2a107237856e14f29cebf5b10c876cc1a2481c5
 
 build:
   noarch: generic
@@ -21,7 +21,7 @@ requirements:
     - ruby
   run:
     - {{ pin_compatible('ruby', max_pin='x.x') }}
-    - rb-rexml >=3.3.9
+    - rb-rexml >=0
 
 test:
   commands:
